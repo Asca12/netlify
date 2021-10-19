@@ -5,7 +5,8 @@
 [[headers]]
   for = "/*" # This defines which paths this specific [[headers]] block will cover.
   [headers.values]
-    X-Frame-Options = "DENY"
+    X-Frame-Options = DENY
+    X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
     Content-Security-Policy = "frame-ancestors https://affectionate-goldberg-b7bb76.netlify.app/"
     Content-Security-Policy = "script-src https://affectionate-goldberg-b7bb76.netlify.app/"
